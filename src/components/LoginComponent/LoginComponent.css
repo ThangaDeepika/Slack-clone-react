@@ -1,7 +1,7 @@
 /* src/components/RegisterComponent/RegisterComponent.css */
 /* src/components/LoginComponent/LoginComponent.css */
 
-.app {
+.login-form {
     height: 100vh;
     display: flex;
     align-items: center;

@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #350d36;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.header {
+  background: #3f0e40;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  /* color: white; */
+  font-size: 24px;
+  width: 100%;
+  margin: 0;
+  height: 2.5%;
+}
+.left-arrow{
+  display: flex;
+  position: absolute;
+  gap: 25px;
+  left: 19%;
+  font-size: 70%;
+  
+}
+.ques-header{
+  position: absolute;
+  margin-left: 95%;
+  font-size: 70%;
+}
+.search-icon{
+  position: absolute;
+  margin-left: 35%;
+  font-size: 50%; 
+}
+.side-icon-top{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 190%;
+  padding-top: 15%;
+}
+.side-more{
+  font-size: 50%;
+}
+.side-icon-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 190%;
+  padding-bottom: 65%;
+}
+.search-bar {
+  width: 120%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-left: -85px;
+  margin-right: 390px;
+  background-color: #744777;
+  color: white; 
+  height: 20%;
+}
+.search-bar::placeholder {
+  color: white; /* Adjust this color as needed */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  margin-left: 0;
+  width: 100%;
+}
+
+.side-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f0e40;
+  width: 4%;
+}
+.sidebar {
+  width: 300px; /* Fixed width for the sidebar */
+  background:#582959;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.sidebar h2 {
+  margin: 0 0 20px 0;
+  color: #9a99a6;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  background: #4a154b;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.sidebar ul li:hover {
+  background: #673A69;
+}
+
+.main {
+  flex: 1; /* Take the remaining space */
+  padding: 20px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+
+.main .welcome-message {
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.group-list {
+  width: 100%;
+  color: white;
+}
+
+.group-list input[type="text"],
+.group-list button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+}
+
+.group-list ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.group-list li {
+  padding: 10px;
+  cursor: pointer;
+  background: #4a154b;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.group-list li:hover {
+  background: #340e36;
+}
+
+.group h2 {
+  margin-top: 0;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  background: #f3f3f3;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.message-text {
+  font-size: 16px;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #b9bbbe;
+}
+
+.message-form {
+  display: flex;
+  margin-top: auto;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #f3f3f3;
+  color: black;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #2c2f33;
+  color: white;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background: #23272a;
+}
+

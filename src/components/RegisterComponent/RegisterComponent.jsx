@@ -44,7 +44,7 @@ const RegisterComponent = () => {
   };
 
   return (
-    <Grid textAlign="center" verticalAlign="middle" className="app">
+    <Grid textAlign="center" verticalAlign="middle" className="login-form">
       <Grid.Column className="grid-column">
         <Header as="h2" icon textAlign="center" className="header">
           <img src={slackLogo} alt="Slack Logo" />

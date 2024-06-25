@@ -7,7 +7,7 @@ import { Grid, Form, Segment, Header, Button, Message } from 'semantic-ui-react'
 import './LoginComponent.css';
 import slackLogo from '../../assets/slack-logo.png';
 
-const LoginComponent = () => {
+const LoginComponent = ({ onLogin }) => {
   const [user, setUser] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,8 @@ const LoginComponent = () => {
       setLoading(true);
       try {
         await loginUser(user.email, user.password);
-        navigate('/');
+        onLogin();
+        navigate('/app');
       } catch (error) {
         setError(error.message);
       }
@@ -34,7 +35,7 @@ const LoginComponent = () => {
   const isFormValid = () => user.email && user.password;
 
   return (
-    <Grid textAlign="center" verticalAlign="middle" className="app">
+    <Grid textAlign="center" verticalAlign="middle" className="login-form">
       <Grid.Column className="grid-column">
         <Header as="h2" icon textAlign="center" className="header">
           <img src={slackLogo} alt="Slack Logo" />
