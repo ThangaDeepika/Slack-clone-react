@@ -31,7 +31,7 @@ const GroupList = ({
 
   return (
     <div className="group-list">
-      <h2 >Groups</h2>
+      <h2 className="Groupcolor">Groups</h2>
       <input
         type="text"
         placeholder="Group Name"
